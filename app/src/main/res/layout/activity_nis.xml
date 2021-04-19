@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backbg"
+    tools:context=".nis">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/nisarg_hostel"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/nisrooms"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/nisarg_room"
+            android:src="@drawable/room_icon" />
+        <Button
+            android:id="@+id/nisroom"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/custom_btn"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/nisrooms"
+            android:contentDescription="@string/nisarg_room"
+            android:text="@string/rooms" />
+
+        <ImageView
+            android:id="@+id/nisspecialfacilitiess"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/nisarg_special_facilities"
+            android:src="@drawable/specialfacilities_icon" />
+
+        <Button
+            android:id="@+id/nisspecialfacilities"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="190dp"
+            android:background="@drawable/custom_btn"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/nisspecialfacilitiess"
+            android:contentDescription="@string/nisarg_special_facilities"
+            android:text="@string/special_facilities" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/nisfeess"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/nisarg_fees"
+            android:src="@drawable/fees_icon" />
+
+        <ImageView
+            android:id="@+id/nisaddresss"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/nisarg_address"
+            android:src="@drawable/address_icon" />
+
+        <Button
+            android:id="@+id/nisfees"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/custom_btn"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/nisfeess"
+            android:contentDescription="@string/nisarg_fees"
+            android:text="@string/fees" />
+
+        <Button
+            android:id="@+id/nisaddress"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/custom_btn"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/nisaddresss"
+            android:contentDescription="@string/nisarg_address"
+            android:text="@string/address" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/niscontacts"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/nisarg_contacts"
+            android:src="@drawable/contact_icon" />
+
+        <Button
+            android:id="@+id/niscontact"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_btn"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/niscontacts"
+            android:contentDescription="@string/nisarg_contacts"
+            android:text="@string/contact" />
+    </RelativeLayout>
+
+</LinearLayout>

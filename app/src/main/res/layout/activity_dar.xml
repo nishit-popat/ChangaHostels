@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backbg"
+    tools:context=".dar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/darshan_hostel"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/darrooms"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/darshan_rooms"
+            android:src="@drawable/room_icon" />
+        <Button
+            android:id="@+id/darroom"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/darrooms"
+            android:background="@drawable/custom_btn"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/darshan_rooms"
+            android:text="@string/rooms" />
+
+        <ImageView
+            android:id="@+id/darspecialfacilitiess"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/darshan_special_facilities"
+            android:src="@drawable/specialfacilities_icon" />
+
+        <Button
+            android:id="@+id/darspecialfacilities"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_btn"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/darspecialfacilitiess"
+            android:contentDescription="@string/darshan_special_facilities"
+            android:text="@string/special_facilities" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/darfeess"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/darshan_fees"
+            android:src="@drawable/fees_icon" />
+
+        <ImageView
+            android:id="@+id/daraddresss"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/darshan_address"
+            android:src="@drawable/address_icon" />
+
+        <Button
+            android:id="@+id/darfees"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/darfeess"
+            android:background="@drawable/custom_btn"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/darshan_fees"
+            android:text="@string/fees" />
+
+        <Button
+            android:id="@+id/daraddress"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/daraddresss"
+            android:background="@drawable/custom_btn"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/darshan_address"
+            android:text="@string/address" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/darcontacts"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/darshan_contact"
+            android:src="@drawable/contact_icon" />
+
+        <Button
+            android:id="@+id/darcontact"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_btn"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/darcontacts"
+            android:contentDescription="@string/darshan_contact"
+            android:text="@string/contact" />
+    </RelativeLayout>
+
+</LinearLayout>

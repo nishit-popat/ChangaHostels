@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backbg"
+    tools:context=".ash">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/ashirwad_hostel"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/ashrooms"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/ashirwad_rooms"
+            android:src="@drawable/room_icon" />
+        <Button
+            android:id="@+id/ashroom"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/custom_btn"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/ashrooms"
+            android:contentDescription="@string/ashirwad_rooms"
+            android:text="@string/rooms" />
+
+        <ImageView
+            android:id="@+id/ashspecialfacilitiess"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/ashirwad_special_facilities"
+            android:src="@drawable/specialfacilities_icon" />
+
+        <Button
+            android:id="@+id/ashspecialfacilities"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_btn"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/ashspecialfacilitiess"
+            android:contentDescription="@string/ashirwad_special_facilities"
+            android:text="@string/special_facilities" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/ashfeess"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/ashirwad_fees"
+            android:src="@drawable/fees_icon" />
+
+        <ImageView
+            android:id="@+id/ashaddresss"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/ashirwad_address"
+            android:src="@drawable/address_icon" />
+
+        <Button
+            android:id="@+id/ashfees"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/custom_btn"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/ashfeess"
+            android:contentDescription="@string/ashirwad_fees"
+            android:text="@string/fees" />
+
+        <Button
+            android:id="@+id/ashaddress"
+            android:layout_width="180dp"
+            android:layout_marginEnd="5dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="190dp"
+            android:background="@drawable/custom_btn"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/ashaddresss"
+            android:contentDescription="@string/ashirwad_address"
+            android:text="@string/address" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/ashcontacts"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/ashirwad_contact"
+            android:src="@drawable/contact_icon" />
+
+        <Button
+            android:id="@+id/ashcontact"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_btn"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/ashcontacts"
+            android:contentDescription="@string/ashirwad_contact"
+            android:text="@string/contact" />
+    </RelativeLayout>
+
+</LinearLayout>
